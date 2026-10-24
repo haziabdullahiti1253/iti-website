@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hazi Abdullah ITI | Industrial Training Institute</title>
+
+  <meta name="description"
+        content="Hazi AbdullaH ITI - Quality technical education, practical training and skill development.">
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    :root {
+      --primary: #063b73;
+      --primary-dark: #02284d;
+      --blue: #087fce;
+      --gold: #ffc107;
+      --light: #f5f8fc;
+      --white: #ffffff;
+      --text: #333333;
+      --muted: #6b7280;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(6, 59, 115, 0.98);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+
+    .navbar {
+      max-width: 1200px;
+      margin: auto;
+      min-height: 75px;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      color: white;
+      font-size: 23px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    .nav-btn {
+      background: var(--gold);
+      color: #111 !important;
+      padding: 10px 17px;
+      border-radius: 5px;
+    }
+
+    .nav-btn:hover {
+      background: white;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 80px 20px;
+
+      background:
+        linear-gradient(
+          rgba(0, 37, 75, 0.80),
+          rgba(0, 37, 75, 0.80)
+        ),
+        linear-gradient(
+          135deg,
+          #087fce,
+          #063b73
+        );
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.3);
+      padding: 8px 18px;
+      border-radius: 50px;
+      margin-bottom: 22px;
+      color: var(--gold);
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .hero h1 {
+      font-size: 58px;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: var(--gold);
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 750px;
+      margin: 0 auto 15px;
+      color: #e8f2ff;
+    }
+
+    .hero-buttons {
+      margin-top: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 27px;
+      margin: 5px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      background: var(--gold);
+      color: #111;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: white;
+      transform: translateY(-3px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: var(--primary);
+    }
+
+    /* COMMON */
+    section {
+      padding: 85px 20px;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-heading small {
+      color: var(--blue);
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .section-heading h2 {
+      color: var(--primary);
+      font-size: 38px;
+      margin-top: 8px;
+    }
+
+    .section-heading p {
+      max-width: 650px;
+      margin: 12px auto 0;
+      color: var(--muted);
+    }
+
+    /* STATS */
+    .stats {
+      background: white;
+      padding: 0 20px;
+    }
+
+    .stats-container {
+      max-width: 1050px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      box-shadow: 0 10px 35px rgba(0,0,0,0.10);
+      border-radius: 12px;
+      overflow: hidden;
+      transform: translateY(-50px);
+    }
+
+    .stat {
+      text-align: center;
+      padding: 28px 15px;
+      border-right: 1px solid #eee;
+    }
+
+    .stat:last-child {
+      border-right: none;
+    }
+
+    .stat h3 {
+      color: var(--primary);
+      font-size: 30px;
+    }
+
+    .stat p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* ABOUT */
+    .about {
+      background: white;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .about-text h3 {
+      color: var(--primary);
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .about-text p {
+      color: #555;
+      margin-bottom: 18px;
+    }
+
+    .check-list {
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    .check-list li {
+      margin: 12px 0;
+      font-weight: 600;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      color: var(--gold);
+      background: var(--primary);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 23px;
+      height: 23px;
+      margin-right: 10px;
+      font-size: 13px;
+    }
+
+    .about-image {
+      min-height: 380px;
+      border-radius: 15px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 26px;
+      font-weight: bold;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+
+    .about-image img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .about-image span {
+      position: relative;
+      z-index: 1;
+      padding: 12px 20px;
+      border-radius: 8px;
+      background: rgba(6,59,115,0.55);
+    }
+
+    /* TRADES */
+    .trades {
+      background: var(--light);
+    }
+
+    .trade-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .trade-card {
+      background: white;
+      padding: 35px 25px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+      transition: 0.3s;
+      border-bottom: 4px solid transparent;
+    }
+
+    .trade-card:hover {
+      transform: translateY(-8px);
+      border-bottom-color: var(--gold);
+    }
+
+    .trade-icon {
+      width: 75px;
+      height: 75px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      background: #e9f4ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 35px;
+    }
+
+    .trade-card h3 {
+      color: var(--primary);
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .trade-card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    /* WHY US */
+    .why-us {
+      background: var(--primary);
+      color: white;
+    }
+
+    .why-us .section-heading h2 {
+      color: white;
+    }
+
+    .why-us .section-heading small {
+      color: var(--gold);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .why-card {
+      background: rgba(255,255,255,0.08);
+      padding: 30px 25px;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .why-card:hover {
+      background: rgba(255,255,255,0.14);
+      transform: translateY(-5px);
+    }
+
+    .why-card .icon {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .why-card h3 {
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    .why-card p {
+      color: #dcecff;
+      font-size: 15px;
+    }
+
+    /* ADMISSION */
+    .admission {
+      background: var(--gold);
+      text-align: center;
+    }
+
+    .admission h2 {
+      color: var(--primary-dark);
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .admission p {
+      max-width: 650px;
+      margin: auto;
+      color: #333;
+    }
+
+    .admission .btn {
+      background: var(--primary);
+      color: white;
+      margin-top: 25px;
+    }
+
+    .admission .btn:hover {
+      background: var(--primary-dark);
+    }
+
+    /* NOTICE */
+    .notice {
+      background: white;
+    }
+
+    .notice-list {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .notice-item {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 20px;
+      border-bottom: 1px solid #eee;
+      transition: 0.3s;
+    }
+
+    .notice-item:hover {
+      background: #f8fbff;
+    }
+
+    .notice-tag {
+      background: var(--primary);
+      color: white;
+      padding: 7px 12px;
+      border-radius: 5px;
+      font-size: 12px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    /* GALLERY */
+    .gallery {
+      background: var(--light);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .gallery-item {
+      height: 230px;
+      border-radius: 12px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      background: linear-gradient(135deg, #087fce, #063b73);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+      transition: 0.3s;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .gallery-item span {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 12px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(transparent, rgba(0,0,0,0.78));
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.03);
+    }
+
+    /* CONTACT */
+    .contact {
+      background: white;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 40px;
+    }
+
+    .contact-info {
+      background: var(--primary);
+      color: white;
+      padding: 35px;
+      border-radius: 12px;
+    }
+
+    .contact-info h3 {
+      color: var(--gold);
+      font-size: 25px;
+      margin-bottom: 25px;
+    }
+
+    .contact-info p {
+      margin: 18px 0;
+      color: #e8f2ff;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 15px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(8,127,206,0.10);
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    button {
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #formStatus {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+
+
+    /* NEW SECTIONS: ACHIEVEMENTS, STAFF & MAP */
+    .achievement-section { background: var(--light); }
+    .achievement-grid, .staff-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+    .achievement-card, .staff-card { background: white; padding: 30px 24px; border-radius: 14px; box-shadow: 0 8px 25px rgba(0,0,0,0.07); border-top: 4px solid var(--gold); text-align: center; transition: transform .25s, box-shadow .25s; }
+    .achievement-card:hover, .staff-card:hover { transform: translateY(-5px); box-shadow: 0 14px 32px rgba(0,0,0,0.12); }
+    .achievement-icon, .staff-avatar { width: 76px; height: 76px; margin: 0 auto 18px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: #e9f4ff; color: var(--primary); font-size: 34px; }
+    .achievement-card h3, .staff-card h3 { color: var(--primary); margin-bottom: 9px; }
+    .achievement-card p, .staff-card p { color: var(--muted); font-size: 15px; }
+    .staff-section { background: white; }
+    .staff-note { max-width: 760px; margin: 28px auto 0; text-align: center; color: var(--muted); }
+    .map-wrap { margin-top: 40px; overflow: hidden; border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,.12); background: white; }
+    .map-wrap iframe { display: block; width: 100%; height: 380px; border: 0; }
+    .map-caption { padding: 18px 22px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .map-caption p { color: var(--muted); }
+    .map-link { display: inline-block; padding: 10px 16px; background: var(--primary); color: white; border-radius: 6px; text-decoration: none; font-weight: bold; }
+    .map-link:hover { background: var(--blue); }
+    .notice-item { border-radius: 8px; }
+    .notice-tag { min-width: 58px; text-align: center; }
+    @media (max-width: 700px) { .achievement-grid, .staff-grid { grid-template-columns: 1fr; } .map-wrap iframe { height: 300px; } .map-caption { align-items: flex-start; flex-direction: column; } }
+
+    /* FOOTER */
+    footer {
+      background: var(--primary-dark);
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    footer .footer-logo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    footer span {
+      color: var(--gold);
+    }
+
+    footer p {
+      color: #cbd9e8;
+      font-size: 14px;
+      margin: 5px;
+    }
+
+    /* WHATSAPP */
+    .whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #25d366;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      text-decoration: none;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+      z-index: 2000;
+      transition: 0.3s;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.1);
+    }
+
+    /* MOBILE */
+    @media (max-width: 900px) {
+
+      nav ul {
+        gap: 14px;
+      }
+
+      .hero h1 {
+        font-size: 45px;
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trade-grid,
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    }
+
+    @media (max-width: 700px) {
+
+      .navbar {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px;
+      }
+
+      nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        font-size: 13px;
+      }
+
+      .hero {
+        min-height: 580px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      section {
+        padding: 65px 18px;
+      }
+
+      .section-heading h2 {
+        font-size: 30px;
+      }
+
+      .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+        transform: translateY(-30px);
+      }
+
+      .stat {
+        border-bottom: 1px solid #eee;
+      }
+
+      .trade-grid,
+      .why-grid,
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-item {
+        height: 210px;
+      }
+
+      .notice-item {
+        align-items: flex-start;
+      }
+
+      .whatsapp {
+        width: 55px;
+        height: 55px;
+        right: 15px;
+        bottom: 15px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="navbar">
+
+      <div class="logo">
+        HAZI <span>ABDULLAH</span> ITI
+      </div>
+
+      <nav>
+
+        <ul>
+
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#trades">Trades</a></li>
+          <li><a href="#why">Why Us</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#staff">Principal &amp; Staff</a></li>
+          <li><a href="#notice">Notice</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact" class="nav-btn">Contact</a></li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO -->
+
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+
+      <div class="hero-badge">
+        INDUSTRIAL TRAINING INSTITUTE
+      </div>
+
+      <h1>
+        HAZI <span>ABDULLAH</span> ITI
+      </h1>
+
+      <p>
+        Building Skills. Creating Opportunities.
+        Shaping a Better Future.
+      </p>
+
+      <p>
+        Quality Technical Education • Practical Training •
+        Skill Development
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#admission" class="btn">
+          Apply for Admission
+        </a>
+
+        <a href="#about" class="btn btn-outline">
+          Explore Our Institute
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- STATS -->
+
+  <section class="stats">
+
+    <div class="stats-container">
+
+      <div class="stat">
+        <h3>3+</h3>
+        <p>Training Trades</p>
+      </div>
+
+      <div class="stat">
+        <h3>100+</h3>
+        <p>Students</p>
+      </div>
+
+      <div class="stat">
+        <h3>10+</h3>
+        <p>Years of Training</p>
+      </div>
+
+      <div class="stat">
+        <h3>100%</h3>
+        <p>Skill Focused</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section class="about" id="about">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <small>About Institute</small>
+
+        <h2>Welcome to Hazi Abdullah ITI</h2>
+
+        <p>
+          A place where technical education meets practical skills.
+        </p>
+
+      </div>
+
+
+      <div class="about-grid">
+
+        <div class="about-text">
+
+          <h3>
+            Learn Today. Build Tomorrow.
+          </h3>
+
+          <p>
+            Hazi Abdullah Industrial Training Institute is
+            dedicated to providing quality technical education
+            and practical skill development to students.
+          </p>
+
+          <p>
+            Our focus is to help students develop useful
+            industry-oriented skills and prepare themselves
+            for future career opportunities.
+          </p>
+
+          <ul class="check-list">
+
+            <li>Practical based technical training</li>
+            <li>Skill development focused education</li>
+            <li>Career-oriented learning</li>
+            <li>Supportive learning environment</li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="about-image">
+          <img src="images/campus.jpg" alt="Hazi Abdullah ITI campus">
+          <span>ITI CAMPUS</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- TRADES -->
+
+  <section class="trades" id="trades">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <small>Our Courses</small>
+
+        <h2>Popular ITI Trades</h2>
+
+        <p>
+          Develop practical and technical skills
+          for your future career.
+        </p>
+
+      </div>
+
+
+      <div class="trade-grid">
+
+        <div class="trade-card">
+
+          <div class="trade-icon">⚡</div>
+
+          <h3>Electrician</h3>
+
+          <p>
+            Learn electrical wiring, installation,
+            maintenance and practical electrical work.
+          </p>
+
+        </div>
+
+
+        <div class="trade-card">
+
+          <div class="trade-icon">🔧</div>
+
+          <h3>Fitter</h3>
+
+          <p>
+            Develop workshop skills, fitting techniques,
+            tools and machinery knowledge.
+          </p>
+
+        </div>
+
+
+        <div class="trade-card">
+
+          <div class="trade-icon">💻</div>
+
+          <h3>Computer</h3>
+
+          <p>
+            Learn computer fundamentals, applications
+            and essential digital skills.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHY US -->
+
+  <section class="why-us" id="why">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <small>Why Choose Us</small>
+
+        <h2>Why Hazi Abdullah ITI?</h2>
+
+        <p>
+          We focus on practical learning and
+          skill development.
+        </p>
+
+      </div>
+
+
+      <div class="why-grid">
+
+        <div class="why-card">
+          <div class="icon">🎓</div>
+          <h3>Quality Education</h3>
+          <p>
+            Focused technical education with
+            practical learning.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="icon">🛠️</div>
+          <h3>Practical Training</h3>
+          <p>
+            Students learn through practical
+            workshop-based training.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="icon">👨‍🏫</div>
+          <h3>Experienced Staff</h3>
+          <p>
+            Supportive teaching environment
+            for students.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="icon">💼</div>
+          <h3>Career Focus</h3>
+          <p>
+            Training focused on useful
+            technical and career skills.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="icon">🏫</div>
+          <h3>Learning Environment</h3>
+          <p>
+            A positive environment for
+            technical education.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="icon">🚀</div>
+          <h3>Future Ready Skills</h3>
+          <p>
+            Develop skills that can support
+            future career opportunities.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ADMISSION -->
+
+  <section class="admission" id="admission">
+
+    <div class="container">
+
+      <h2>Admissions Open</h2>
+
+      <p>
+        Start your technical education journey
+        with Hazi Abdullah ITI.
+      </p>
+
+      <a href="#contact" class="btn">
+        Enquire Now
+      </a>
+
+    </div>
+
+  </section>
+
+
+
+
+  <!-- STUDENT ACHIEVEMENTS -->
+  <section class="achievement-section" id="achievements">
+    <div class="container">
+      <div class="section-heading">
+        <small>Learning &amp; Growth</small>
+        <h2>Student Achievements</h2>
+        <p>Practical learning, technical skills and preparation for future opportunities.</p>
+      </div>
+      <div class="achievement-grid">
+        <article class="achievement-card"><div class="achievement-icon">🏆</div><h3>Skill Development</h3><p>Build confidence by learning and practising trade-related skills.</p></article>
+        <article class="achievement-card"><div class="achievement-icon">🛠️</div><h3>Hands-on Practice</h3><p>Connect classroom learning with practical workshop activities.</p></article>
+        <article class="achievement-card"><div class="achievement-icon">🎯</div><h3>Career Preparation</h3><p>Develop technical knowledge and habits useful for future work.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRINCIPAL & STAFF -->
+  <section class="staff-section" id="staff">
+    <div class="container">
+      <div class="section-heading"><small>Our Team</small><h2>Principal &amp; Staff</h2><p>Meet the people who support technical education and student learning.</p></div>
+      <div class="staff-grid">
+        <article class="staff-card"><div class="staff-avatar">👨‍💼</div><h3>Principal</h3><p>Institute leadership</p></article>
+        <article class="staff-card"><div class="staff-avatar">👨‍🏫</div><h3>Trade Instructors</h3><p>Technical guidance and practical training</p></article>
+        <article class="staff-card"><div class="staff-avatar">🤝</div><h3>Institute Staff</h3><p>Support for students and institute activities</p></article>
+      </div>
+      <p class="staff-note">Principal and staff names/photos can be added here when you provide the correct details.</p>
+    </div>
+  </section>
+
+
+  <!-- NOTICE -->
+
+  <section class="notice" id="notice">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <small>Latest Updates</small>
+
+        <h2>Notice Board</h2>
+
+      </div>
+
+
+      <div class="notice-list">
+
+        <div class="notice-item">
+
+          <span class="notice-tag">NEW</span>
+
+          <span>
+            Admission enquiry is currently open.
+          </span>
+
+        </div>
+
+        <div class="notice-item">
+
+          <span class="notice-tag">INFO</span>
+
+          <span>
+            Students are requested to check institute
+            notices regularly.
+          </span>
+
+        </div>
+
+        <div class="notice-item">
+
+          <span class="notice-tag">ITI</span>
+
+          <span>
+            Practical training and skill development
+            programs available.
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- GALLERY -->
+
+  <section class="gallery" id="gallery">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <small>Our Campus</small>
+
+        <h2>Institute Gallery</h2>
+
+        <p>
+          Photos of our campus, workshops,
+          classrooms and activities.
+        </p>
+
+      </div>
+
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item">
+          <img src="images/campus.jpg" alt="ITI campus building">
+          <span>ITI Campus</span>
+        </div>
+        <div class="gallery-item">
+          <img src="images/workshop.jpg" alt="ITI practical workshop">
+          <span>Workshop</span>
+        </div>
+        <div class="gallery-item">
+          <img src="images/students.jpg" alt="ITI students">
+          <span>Students</span>
+        </div>
+        <div class="gallery-item">
+          <img src="images/activities.jpg" alt="ITI practical training activities">
+          <span>Practical Training</span>
+        </div>
+        <div class="gallery-item">
+          <img src="images/classroom.jpg" alt="Students in classroom">
+          <span>Classroom</span>
+        </div>
+        <div class="gallery-item">
+          <img src="images/campus.jpg" alt="Hazi Abdullah ITI institute building">
+          <span>Activities</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section class="contact" id="contact">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <small>Get In Touch</small>
+
+        <h2>Contact Hazi Abdullah ITI</h2>
+
+        <p>
+          Have questions about admission?
+          Contact us today.
+        </p>
+
+      </div>
+
+
+      <div class="contact-grid">
+
+
+        <div class="contact-info">
+
+          <h3>Hazi Abdullah ITI</h3>
+
+          <p>
+            📍 Hazi Abdullah ITI,<br>
+            Sultanpur Kabirpur, Baskhari,<br>
+            Ambedkar Nagar, Uttar Pradesh – 224129
+          </p>
+
+          <p>
+            📞 Phone: +91 9415721881 , 9455968405 
+          </p>
+
+          <p>
+            📧 Email: PITI1253ABN@GAMIL.COM
+          </p>
+
+          <p>
+            🕘 Office Time: 8:30 AM – 5:00 PM
+          </p>
+
+        </div>
+
+
+        <form id="enquiryForm">
+
+          <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            required
+          >
+
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Mobile Number"
+            required
+          >
+
+          <input
+            type="email"
+            id="email"
+            placeholder="Email Address"
+          >
+
+          <textarea
+            id="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+
+          <button
+            class="btn"
+            type="submit"
+            id="submitBtn"
+          >
+            Send Enquiry
+          </button>
+
+          <div id="formStatus"></div>
+
+        </form>
+
+
+      </div>
+
+
+      <div class="map-wrap" aria-label="Google Map showing Hazi Abdullah ITI location">
+        <iframe title="Hazi Abdullah ITI location on Google Maps" src="https://maps.google.com/maps?q=26.4412487,82.7944906&amp;z=17&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <div class="map-caption">
+          <p><strong>Find Us:</strong> Hazi Abdullah ITI, Sultanpur Kabirpur, Baskhari, Ambedkar Nagar, Uttar Pradesh – 224129</p>
+          <a class="map-link" href="https://www.google.com/maps/place/%E0%A4%B9%E0%A4%BE%E0%A4%9C%E0%A5%80+%E0%A4%85%E0%A4%AC%E0%A5%8D%E0%A4%A6%E0%A5%81%E0%A4%B2%E0%A5%8D%E0%A4%B2%E0%A4%BE%E0%A4%B9+%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%BE0+%E0%A4%86%E0%A4%880+%E0%A4%9F%E0%A5%800+%E0%A4%86%E0%A4%880/@26.4412535,82.7919157,17z/data=!3m1!4b1!4m6!3m5!1s0x3990e5f89c886245:0x6d7a6ae57ff29ea5!8m2!3d26.4412487!4d82.7944906!16s%2Fg%2F11f5f3j8lf" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-logo">
+      HAZI <span>ABDULLAH</span> ITI
+    </div>
+
+    <p>
+      Private Industrial Training Institute
+    </p>
+
+    <p>
+      © 2026 Hazi Abdullah ITI.
+      All Rights Reserved.
+    </p>
+
+  </footer>
+
+
+  <!-- WHATSAPP -->
+
+  <a
+    class="whatsapp"
+    href="https://wa.me/919455968405"
+    target="_blank"
+    title="Chat on WhatsApp"
+  >
+    ☎
+  </a>
+
+
+  <!-- GOOGLE SHEET ENQUIRY CONNECTION -->
+
+  <script>
+
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbyVRPE156VA2YwHORTqW2HX9YLWP_kY9LDXycSkVwMwRElo1NdwFkFGyBoYBs3wdZjffg/exec";
+
+
+    const form =
+      document.getElementById("enquiryForm");
+
+    const status =
+      document.getElementById("formStatus");
+
+    const submitBtn =
+      document.getElementById("submitBtn");
+
+
+    form.addEventListener("submit", function(event) {
+
+      event.preventDefault();
+
+      submitBtn.disabled = true;
+      submitBtn.innerText = "Sending...";
+
+      status.innerText = "";
+      status.style.color = "#063b73";
+
+
+      const data = {
+
+        name:
+          document.getElementById("name").value,
+
+        phone:
+          document.getElementById("phone").value,
+
+        email:
+          document.getElementById("email").value,
+
+        message:
+          document.getElementById("message").value
+
+      };
+
+
+      fetch(scriptURL, {
+
+        method: "POST",
+
+        mode: "no-cors",
+
+        headers: {
+          "Content-Type": "text/plain;charset=utf-8"
+        },
+
+        body: JSON.stringify(data)
+
+      })
+
+      .then(function() {
+
+        status.innerText =
+          "Thank you! Your enquiry has been submitted successfully.";
+
+        status.style.color = "green";
+
+        form.reset();
+
+        submitBtn.disabled = false;
+        submitBtn.innerText = "Send Enquiry";
+
+      })
+
+      .catch(function(error) {
+
+        console.error(error);
+
+        status.innerText =
+          "Something went wrong. Please try again.";
+
+        status.style.color = "red";
+
+        submitBtn.disabled = false;
+        submitBtn.innerText = "Send Enquiry";
+
+      });
+
+    });
+
+  </script>
+
+
+</body>
+</html>
